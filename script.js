@@ -112,7 +112,22 @@
 
 //console.log(indexArray([2,5,1,7,3], 5));
 
-//Question 2: Given an array and two numbers, your function should replace all entries of first number in an array with the second number.
+//Question 3: Given an array and two numbers, your function should replace 
+//all entries of first number in an array with the second number.
 
+
+
+const replaceArray = (arrValue, target, change) => {
+    
+    for(let i=0; i<arrValue.length; i++) {
+        if (arrValue[i] === target) {
+
+            arrValue.splice(arrValue.indexOf(target), 1, change);
+        }                               
+    }
+    return arrValue;
+}
+
+console.log(replaceArray([1,5,3,5,6,8], 5, 10));
 
 
