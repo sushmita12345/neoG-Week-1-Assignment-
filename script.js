@@ -98,18 +98,21 @@
 
 //Question 2: Given an array and an item, your function should return the index at which the item is present.
 
-const indexArray = (a,b,c,d,e) => {
-    let target = 2;
-    let index = (a,b,c,d,e).indexOf(target);
-    // for(let i=0; i<indexArray.length; i++) {
-    //     if(indexArray[i] === target) {
-    //         index = indexArray[i];
-    //     }
-    // }
-    return index;
+//  //let arrValue = [2,5,1,7,3];
+// const indexArray = (arrValue, target) => {
+//     // let index = 0;
+//     //let curr = indexArray[0];
+//     for(let i=0; i<arrValue.length; i++) {
+//         if(arrValue[i] === target) {
+//             return i;
+//         }
+//     }
 
-}
+// }
 
-indexArray(2,5,1,7,3);
-    
+//console.log(indexArray([2,5,1,7,3], 5));
+
+//Question 2: Given an array and two numbers, your function should replace all entries of first number in an array with the second number.
+
+
 
