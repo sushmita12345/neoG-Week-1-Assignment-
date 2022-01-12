@@ -1,5 +1,5 @@
 
-//********************* Easy level ************************//
+//********************************************************* Easy level ************************************************************//
 
 
 //Question 1: Given a and b, your function should return the value of ab
@@ -8,19 +8,21 @@
 // const power = (a,b) => Math.pow(a, b);
 // console.log(`The power is ${power(2, 3)}`);
 
-
+//********************************************************************************************************************************//
 
 //Question 2: Given length of a regular hexagon, your function should return area of the hexagon.
 
 // let areaOfHexagon = (a) => (3 * Math.sqrt(3) * (a * a)) / 2;   
 // console.log(`The are of Hexagon is: ${(areaOfHexagon(10)).toFixed(2)}`);
 
+//********************************************************************************************************************************//
 
 
 //Question 3: Given a sentence, your functions should return the number of words in the sentence.
 //const countWords = sentence => sentence.match(/(\w+)/g).length;
 //console.log(`There are ${countWords("We are neoGrammers")} words in this sentence.`);
 
+//********************************************************************************************************************************//
 
 
 //Question 4: Given n numbers, your function should return the minimum of them all. The number of parameters won't be accepted from user.
@@ -41,6 +43,7 @@
 // }
 // console.log(myArray(2,5,7,4));
 
+//********************************************************************************************************************************//
 
 
 //Question 5: Given n numbers, your function should return the maximum of them all. The number of parameters won't be accepted from user.
@@ -61,6 +64,7 @@
 // }
 // console.log(myArray(2,5,7,4));
 
+//********************************************************************************************************************************//
 
 
 //Question 6: Given three angles of a triange, your function should return if it is a scalene, isosceles, equilateral triangle or not a triangle at all. Example:
@@ -85,7 +89,7 @@
 
 
 
-//*****************  Medium level **********************//
+//*****************************************************  Medium level ***********************************************************//
 
 
 
@@ -94,6 +98,7 @@
 // const arrayLength = (a,b,c,d) => arrayLength.length;
 // console.log(`The length of new array is: ${arrayLength(1,2,3,4)}`);
 
+//********************************************************************************************************************************//
 
 
 //Question 2: Given an array and an item, your function should return the index at which the item is present.
@@ -111,6 +116,9 @@
 // }
 
 //console.log(indexArray([2,5,1,7,3], 5));
+
+//********************************************************************************************************************************//
+
 
 //Question 3: Given an array and two numbers, your function should replace 
 //all entries of first number in an array with the second number.
@@ -130,6 +138,8 @@
 
 // console.log(replaceArray([1,5,3,5,6,8], 5, 10));
 
+//********************************************************************************************************************************//
+
 
 // Question 4: Given two arrays, your function should return single merged
 // array.
@@ -140,6 +150,10 @@
 // }
 // console.log(mergeArray([1,3,5], [2,4,6]));
 
+
+//********************************************************************************************************************************//
+
+
 //Question 5: Given a string and an index, your function should return the
 // character present at that index in the string.
 
@@ -148,6 +162,10 @@
 //     return indexValue;
 // }
 // console.log(findCharIndex(("neoGrammer"), 5));
+
+//********************************************************************************************************************************//
+
+
 
 //Question 6:Given two dates, your function should return which one comes before the other.
 
@@ -160,7 +178,7 @@
 // (minDate("2021/05/02", "2021/01/24"))
 
 
-// ********************* Adavanced Level ************** //
+// ******************************************************** Adavanced Level **************************************************** //
 
 // Question 1: Write a function which generates a secret code from a given string, by shifting characters of alphabet by N places.
 
@@ -181,6 +199,7 @@
 // }
 // console.log(encodeString("abcz", 2))
 
+//********************************************************************************************************************************//
 
 
 //Question 2: Given a sentence, return a sentence with first letter of all words as capital.
@@ -196,7 +215,10 @@
 
 // console.log(toSentenceCase("we are neoGrammers"));
 
-//Question 2: Given an array of numbers, your function should return an array in the ascending order.
+//Question 3: Given an array of numbers, your function should return an array in the ascending order.
+
+//********************************************************************************************************************************//
+
 
 // const sortArray = (input) => {
 //     return input.sort((a,b) => a-b);
@@ -208,17 +230,20 @@
 // console.log(sortArray([100,83,32,9,45,61]));
 
 
+//********************************************************************************************************************************//
+
+
 //Question 4: Given a sentence, your function should reverse the order of characters in each word, keeping same sequence of words.
 
-const reverseCharacterOfWord = (text) => {
-    return text.split('').reverse().join("");
+// const reverseCharacterOfWord = (text) => {
+//     return text.split('').reverse().join("");
 
-}
+// }
 
-console.log(reverseCharacterOfWord("we are neoGrammers"));
+// console.log(reverseCharacterOfWord("we are neoGrammers"));
 
 
-//******* ES6+ assignment question from Rohit's notion **********
+//******************************************** ES6+ assignment question from Rohit's notion ***************************************//
 
 // Question 1:
 
@@ -229,9 +254,13 @@ console.log(reverseCharacterOfWord("we are neoGrammers"));
 // }
 // console.log(aloo);
 
+//********************************************************************************************************************************//
+
 
 // const multiply = (x,y) => x*y;
 // console.log(`The multiple is: ${multiply(2,3)}`);
+
+//********************************************************************************************************************************//
 
 
 // const customer = {
@@ -243,11 +272,15 @@ console.log(reverseCharacterOfWord("we are neoGrammers"));
 //     unitprice: 50
 // };
 
+//********************************************************************************************************************************//
+
+
 // const {name1} = customer;
 // const {amount, product, unitprice} = card;
 
 // console.log(`Hello ${name1} wants to buy ${amount} ${product} for price of ${unitprice} per price`);
 
+//********************************************************************************************************************************//
 
 
 // let [CEO, , Mentor] = ["Tanvi", "Swap", "Tanay", "MA", "CA", "PA", "TA"];
@@ -255,6 +288,7 @@ console.log(reverseCharacterOfWord("we are neoGrammers"));
 // console.log(CEO);
 // console.log(Mentor);
 
+//********************************************************************************************************************************//
 
 
 // let arr = ["MA", "TA", "PA", "CA"];
@@ -262,6 +296,8 @@ console.log(reverseCharacterOfWord("we are neoGrammers"));
 // let [firstName, surname] = arr;
 // console.log(firstName);
 // console.log(surname);
+
+//********************************************************************************************************************************//
 
 
 // const Aaloo = "Tasty";
@@ -271,18 +307,23 @@ console.log(reverseCharacterOfWord("we are neoGrammers"));
 //   Bhaloo
 // };
 
+//********************************************************************************************************************************//
 
 
 // const a = 5;
 // const b = 10;
 // console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`);
 
+//********************************************************************************************************************************//
 
 
 // const arithmeticsObj = {
 //     sum: sum = (num1, num2) => num1 + num2,
 //     multiply: multiply = (num1, num2) => num1 * num2
 // };
+
+
+//********************************************************************************************************************************//
 
 
 // let avengers = {
@@ -303,6 +344,9 @@ console.log(reverseCharacterOfWord("we are neoGrammers"));
 // let [operation,members] = [avengers.operation,avengers.members];
 
 
+//********************************************************************************************************************************//
+
+
 // Question 2: ES6 => ES5
 
 // function packIt(ele) {
@@ -310,6 +354,9 @@ console.log(reverseCharacterOfWord("we are neoGrammers"));
 // }
 
 // packIt([1,2,3,4,5])
+
+
+//********************************************************************************************************************************//
 
 
 //Question 3: Guess the output
@@ -322,9 +369,11 @@ console.log(reverseCharacterOfWord("we are neoGrammers"));
 //O/p => Namaste Welcome
 
 //Here Hello takes the value Namaste bcz it is defined
-//in the left side & there is no value Welcome so it 
-//takes the from Welcome function
+//in the left side & there is no value for Welcome in left side
+//so it takes the value from welcome function
 
+
+//********************************************************************************************************************************//
 
 
 // const obj = {
