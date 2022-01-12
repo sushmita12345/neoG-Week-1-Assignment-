@@ -117,17 +117,227 @@
 
 
 
-const replaceArray = (arrValue, target, change) => {
+// const replaceArray = (arrValue, target, change) => {
     
-    for(let i=0; i<arrValue.length; i++) {
-        if (arrValue[i] === target) {
+//     for(let i=0; i<arrValue.length; i++) {
+//         if (arrValue[i] === target) {
 
-            arrValue.splice(arrValue.indexOf(target), 1, change);
-        }                               
-    }
-    return arrValue;
+//             arrValue.splice(arrValue.indexOf(target), 1, change);
+//         }                               
+//     }
+//     return arrValue;
+// }
+
+// console.log(replaceArray([1,5,3,5,6,8], 5, 10));
+
+
+// Question 4: Given two arrays, your function should return single merged
+// array.
+
+// const mergeArray = (arr1, arr2) => {
+//     return arr1.concat(arr2);
+
+// }
+// console.log(mergeArray([1,3,5], [2,4,6]));
+
+//Question 5: Given a string and an index, your function should return the
+// character present at that index in the string.
+
+// const findCharIndex = (text, ele) => {
+//     let indexValue = text.charAt(ele);
+//     return indexValue;
+// }
+// console.log(findCharIndex(("neoGrammer"), 5));
+
+//Question 6:Given two dates, your function should return which one comes before the other.
+
+// const minDate = (d1, d2) => {
+//     const a1 = new Date(d1)
+//     const a2 = new Date(d2);
+//     a1 > a2 ? console.log(d1) : console.log(d2);
+
+// }
+// (minDate("2021/05/02", "2021/01/24"))
+
+
+// ********************* Adavanced Level ************** //
+
+// Question 1: Write a function which generates a secret code from a given string, by shifting characters of alphabet by N places.
+
+
+// const encodeString = (text, num) => {
+//     text = text.toLowerCase();
+
+//     let result = '';
+//     let charcode = 0;
+
+//     for(let i of text) {
+//         charcode = (i.charCodeAt()) + num <= 122 ? i.charCodeAt() + num : i.charCodeAt() + num - 26;
+//         // console.log(i);
+//         result += String.fromCharCode(charcode);
+//         // console.log(result);
+//     }
+//     return result;
+// }
+// console.log(encodeString("abcz", 2))
+
+
+
+//Question 2: Given a sentence, return a sentence with first letter of all words as capital.
+
+
+// const toSentenceCase = (text) => {
+//     return text
+//     .toLowerCase()
+//     .split(' ')
+//     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+//     .join(' ');
+// }
+
+// console.log(toSentenceCase("we are neoGrammers"));
+
+//Question 2: Given an array of numbers, your function should return an array in the ascending order.
+
+// const sortArray = (input) => {
+//     return input.sort((a,b) => a-b);
+    
+//     // return input.sort((a,b) => a-b);
+//     // return input.sort();
+    
+// }
+// console.log(sortArray([100,83,32,9,45,61]));
+
+
+//Question 4: Given a sentence, your function should reverse the order of characters in each word, keeping same sequence of words.
+
+const reverseCharacterOfWord = (text) => {
+    return text.split('').reverse().join("");
+
 }
 
-console.log(replaceArray([1,5,3,5,6,8], 5, 10));
+console.log(reverseCharacterOfWord("we are neoGrammers"));
 
 
+//******* ES6+ assignment question from Rohit's notion **********
+
+// Question 1:
+
+// let aloo = 1;
+// if (aloo == 1) {
+//    let a = 2;
+//    console.log(a);
+// }
+// console.log(aloo);
+
+
+// const multiply = (x,y) => x*y;
+// console.log(`The multiple is: ${multiply(2,3)}`);
+
+
+// const customer = {
+//     name1: "Bhaalo"
+// };
+// const card = {
+//     amount: 20,
+//     product: "Aaalo",
+//     unitprice: 50
+// };
+
+// const {name1} = customer;
+// const {amount, product, unitprice} = card;
+
+// console.log(`Hello ${name1} wants to buy ${amount} ${product} for price of ${unitprice} per price`);
+
+
+
+// let [CEO, , Mentor] = ["Tanvi", "Swap", "Tanay", "MA", "CA", "PA", "TA"];
+ 
+// console.log(CEO);
+// console.log(Mentor);
+
+
+
+// let arr = ["MA", "TA", "PA", "CA"];
+
+// let [firstName, surname] = arr;
+// console.log(firstName);
+// console.log(surname);
+
+
+// const Aaloo = "Tasty";
+// const Bhaloo = "Cute";
+// const Obj = {
+//   Aaloo,
+//   Bhaloo
+// };
+
+
+
+// const a = 5;
+// const b = 10;
+// console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`);
+
+
+
+// const arithmeticsObj = {
+//     sum: sum = (num1, num2) => num1 + num2,
+//     multiply: multiply = (num1, num2) => num1 * num2
+// };
+
+
+// let avengers = {
+//     operation: "Assemble",
+//     members: [
+
+//         {
+//             ironMan: "Tony Stark"
+//         },
+//         {
+//             captainAmerica: "Steve Rogers"
+//         },
+//         {
+//             blackWidow: "Natasha Romanoff"
+//         }
+//     ]
+// };
+// let [operation,members] = [avengers.operation,avengers.members];
+
+
+// Question 2: ES6 => ES5
+
+// function packIt(ele) {
+//     console.log(ele);
+// }
+
+// packIt([1,2,3,4,5])
+
+
+//Question 3: Guess the output
+
+// const hello = () => "Hello"
+// const welcome = () => "Welcome"
+// const [Hello = hello(), Welcome = welcome()] = ["Namaste"]
+// console.log(Hello, Welcome)
+ 
+//O/p => Namaste Welcome
+
+//Here Hello takes the value Namaste bcz it is defined
+//in the left side & there is no value Welcome so it 
+//takes the from Welcome function
+
+
+
+// const obj = {
+//     aloo : 1,
+//     bhallo : 2
+// }
+
+// const {c : aloo = [2,3,4].push(5), aloo} = obj 
+
+// console.log(aloo)
+
+//O/p => SyntaxError: Identifier 'aloo' is already 
+//been declared
+
+//Here if we change the one value of aloo with other
+//name then error will be removed
