@@ -318,8 +318,8 @@
 
 
 // const arithmeticsObj = {
-//     sum: sum = (num1, num2) => num1 + num2,
-//     multiply: multiply = (num1, num2) => num1 * num2
+//     sum:(num1, num2) => num1 + num2,
+//     multiply:(num1, num2) => num1 * num2
 // };
 
 
@@ -390,3 +390,12 @@
 
 //Here if we change the one value of aloo with other
 //name then error will be removed
+
+
+
+function something() {
+    console.log(a)
+    let a = 2
+}
+  
+something()
