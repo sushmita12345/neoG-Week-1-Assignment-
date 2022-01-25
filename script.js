@@ -392,10 +392,3 @@
 //name then error will be removed
 
 
-
-function something() {
-    console.log(a)
-    let a = 2
-}
-  
-something()
